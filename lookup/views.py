@@ -41,7 +41,7 @@ def home(request):
 			'category_description': category_description, 
 			'category_color': category_color})
 	else:
-		api_request = requests.get("https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=33101&distance=5&API_KEY=6BFC8F36-AA2C-4202-AFBD-F7517AA4687D")
+		api_request = requests.get("https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=33101&distance=25&API_KEY=6BFC8F36-AA2C-4202-AFBD-F7517AA4687D")
 
 		try:
 			api = json.loads(api_request.content)
